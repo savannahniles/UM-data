@@ -11,7 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130924033527) do
+ActiveRecord::Schema.define(version: 20130924142341) do
+
+  create_table "keywords", force: true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "keywords", ["name"], name: "index_keywords_on_name"
 
   create_table "programs", force: true do |t|
     t.string   "title"

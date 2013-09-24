@@ -14,10 +14,16 @@ describe Program do
   describe "when title is not present" do
     before { @program.title = " " }
     it { should_not be_valid }
+
+    before { @program.title = nil }
+    it { should_not be_valid }
   end
 
   describe "when tmsId is not present" do
     before { @program.tmsId = " " }
+    it { should_not be_valid }
+
+    before { @program.tmsId = nil }
     it { should_not be_valid }
   end
 
@@ -29,4 +35,5 @@ describe Program do
 
     it { should_not be_valid }
   end
+
 end
