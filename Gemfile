@@ -5,6 +5,7 @@ ruby '2.0.0'
 gem 'rails', '4.0.0'
 gem 'json', '~> 1.8.0'
 gem 'net-http-persistent', '~> 2.9'
+gem 'factory_girl_rails', '4.2.1'
 
 group :development, :test do
   gem 'sqlite3', '1.3.8'

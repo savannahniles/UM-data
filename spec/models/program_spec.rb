@@ -8,6 +8,7 @@ describe Program do
 
   it { should respond_to(:title) }
   it { should respond_to(:tmsId) }
+  it { should respond_to(:relationships) }
 
   it { should be_valid }
 

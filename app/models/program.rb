@@ -1,4 +1,6 @@
 class Program < ActiveRecord::Base
+	has_many :relationships, dependent: :destroy
+	
 	validates :title, presence: true
 	validates :tmsId, presence: true, uniqueness: true
 
